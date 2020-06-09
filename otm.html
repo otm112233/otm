@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>奥美受害者报案资料下载</title>
+    <style index="newi" type="text/css">
+      body {
+        font-size: 16px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+      }
+      a:link,a:visited,a:active {
+        color:cadetblue;      }
+      a:hover {
+        text-decoration: underline;
+      } 
+      	*{margin:0; padding:0;}
+	img{max-width: 100%; height: auto;}
+	.test{height: 600px; max-width: 600px; font-size: 40px;}
+    </style>
+  </head>
+  <body>
+      <p style="text-align: center; width: 100%; background-color:#F7F7F7; height: 40px; line-height: 40px;"><b>奥美受害者报案资料下载</b></p><br>
+    <p></p>
+    <p>
+      <a href="http://139.9.119.36:800/奥美报案资料汇总.zip" target="blank"><img src='http://139.9.119.36:800/xz.png' style=" width:20px; height:20px"> 报案资料汇总</a>
+    </p>
+    <p>
+      <a href="http://139.9.119.36:800/视频.zip" target="blank"><img src='http://139.9.119.36:800/xz.png' style=" width:20px; height:20px"> 奥美宣传视频</a
+      ><span style="color: lightgray; font-size: 13px;">
+        (此文件较大，请耐心下载)</span
+      >
+    </p><br><br>
+<p style="text-align: center;">沉重悼念坑B队友</p>
+    <P style="text-align: center;"><video src="http://139.9.119.36:800/p1.mp4" width="320" height="240" controls="sautoplay"  poster="http://139.9.119.36:800/p1.jpg">
+
+</video></P>
+
+        <script type="text/javascript">
+            function is_weixin() {
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            var isWeixin = is_weixin();
+            var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+            console.log(winHeight);
+            function loadHtml() {
+                var div = document.createElement('div');
+                div.id = 'weixin-tip';
+                div.innerHTML = '<p><img src="weixin.png" alt="微信打开"/></p>';
+                document.body.appendChild(div);
+            }
+
+            function loadStyleText(cssText) {
+                var style = document.createElement('style');
+                style.rel = 'stylesheet';
+                style.type = 'text/css';
+                try {
+                    style.appendChild(document.createTextNode(cssText));
+                } catch (e) {
+                    style.styleSheet.cssText = cssText; //ie9以下
+                }
+                var head = document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+                head.appendChild(style);
+            }
+            var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+            if (isWeixin) {
+                loadHtml();
+                loadStyleText(cssText);
+            }
+        </script>
+  </body>
+</html>
